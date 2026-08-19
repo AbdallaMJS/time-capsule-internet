@@ -391,25 +391,25 @@ with demo_tab:
         {
             "date": "2026-01-10",
             "label": "Launch",
-            "image": "demo/demo_1.png",
+            "image": "demo_1.png",
             "change": "Initial homepage",
         },
         {
             "date": "2026-03-02",
             "label": "New Programs",
-            "image": "demo/demo_2.png",
+            "image": "demo_2.png",
             "change": "New programs section and updated hero message",
         },
         {
             "date": "2026-05-18",
             "label": "Admissions",
-            "image": "demo/demo_3.png",
+            "image": "demo_3.png",
             "change": "Admissions campaign and new call-to-action",
         },
         {
             "date": "2026-07-29",
             "label": "Summer Refresh",
-            "image": "demo/demo_4.png",
+            "image": "demo_4.png",
             "change": "Navigation, statistics, and layout refreshed",
         },
     ]
