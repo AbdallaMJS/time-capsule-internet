@@ -2,3 +2,5 @@ streamlit>=1.36
 selenium>=4.20
 Pillow>=10.0
 ImageHash>=4.3
+APScheduler>=3.10
+pytest>=8.0
