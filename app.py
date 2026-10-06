@@ -99,7 +99,8 @@ def ensure_public_host(url: str) -> None:
             raise ValueError("Local/private network addresses are not allowed.")
 
 
-def build_driver():
+def build_driver() -> webdriver.Chrome:
+    """Builds and configures a headless Chrome WebDriver with anti-detection flags."""
     options = Options()
     options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
@@ -110,6 +111,11 @@ def build_driver():
     options.add_argument("--disable-extensions")
     options.add_argument("--disable-notifications")
     options.add_argument("--lang=en-US")
+    
+    # Anti-detection flags (Genuine Improvement to prevent bot blocking)
+    options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    options.add_experimental_option("useAutomationExtension", False)
 
     chromium_candidates = [
         "/usr/bin/chromium",
