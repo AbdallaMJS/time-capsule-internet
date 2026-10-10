@@ -53,7 +53,7 @@ After activation, the terminal prompt should usually begin with:
 ```
 python -m pip install -r requirements.txt
 ```
-6. Run the Streamlit application
+5. Run the Streamlit application
 ```
 python -m streamlit run app.py
 ```
