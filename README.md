@@ -31,34 +31,35 @@
 
 To run this project locally, follow these steps:
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/AbdallaMJS/time-capsule-internet.git
-   cd time-capsule-internet
-   ```
+### 1. Clone the repository
 
-2. **Set up a virtual environment:**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use: venv\Scripts\activate
-   ```
+```
+git clone https://github.com/AbdallaMJS/time-capsule-internet.git
+cd time-capsule-internet
+```
+2. Create a virtual environment
+```
+python3 -m venv venv
+```
+3. Activate the virtual environment
+```
+source venv/bin/activate
+```
+After activation, the terminal prompt should usually begin with:
+```
+(venv)
+```
+4. Install the required packages
+```
+python -m pip install -r requirements.txt
+```
+6. Run the Streamlit application
+```
+python -m streamlit run app.py
+```
+## 🧠 Educational Value
 
-3. **Install Python dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **System Dependencies:**
-   Ensure you have Google Chrome or Chromium installed on your system, along with the corresponding ChromeDriver. For Linux environments, refer to `packages.txt`.
-
-5. **Run the Application:**
-   ```bash
-   streamlit run app.py
-   ```
-
-## 🧠 Educational Value & MBZUAI Relevance
-
-This project highlights a strong foundation in practical software engineering and data extraction techniques. It goes beyond simple web development by integrating browser automation and computer vision concepts (image hashing). The ability to architect a system that independently gathers data, processes it algorithmically to find meaning (visual changes), and presents it interactively demonstrates the technical maturity and problem-solving skills highly valued in rigorous AI and computer science programs like MBZUAI.
+This project highlights a strong foundation in practical software engineering and data extraction techniques. It goes beyond simple web development by integrating browser automation and computer vision concepts (image hashing). The ability to architect a system that independently gathers data, processes it algorithmically to find meaning (visual changes), and presents it interactively demonstrates the technical maturity and problem-solving skills highly valued in rigorous AI and computer science programs.
 
 ## 🔮 Future Enhancements
 
